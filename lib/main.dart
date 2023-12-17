@@ -13,12 +13,12 @@ class MyApp  extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
     debugShowCheckedModeBanner: false,
-    theme:AppTheme().theme(),
+    theme:AppTheme(selectColor: 1).theme(),
     home: Scaffold(
      appBar: AppBar(title:const Center(child:  Text("Material AppBar")) ),
      body:  Center(
       child: FilledButton.tonal(onPressed: (){},
-       child: const Text("CLick me")),
+       child: const Text("Click me")),
      )
     )
     );
